@@ -19,8 +19,6 @@
         <option value="1">Min</option>
     </select>price:<input id="givenPrice"><button>Filter</button>
 
-    <button>filter</button>
-
     <table>
     
     </table>

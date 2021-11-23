@@ -7,9 +7,11 @@ function start(){
 
 function filtered(){
     
-    if($("#ChoiceOfPrice")
-    {
-       } else {}
+    if($("#ChoiceOfPrice").val()==0){
+        $("table").load("carList.php?MaxPrice="+$("#givenPrice").val());
+    } else {
+        $("table").load("carList.php?MinPrice="+$("#givenPrice").val());
+    }
     
-   $("table").load("carList.php?MaxPrice="+$("#maxPrice").val());
+   
 }
