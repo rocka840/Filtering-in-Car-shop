@@ -39,7 +39,7 @@ if(isset($_GET["MaxPrice"])){
     $sqlSelect->bind_param("i",$_GET["MaxPrice"]);
 } else if ($_GET["MinPrice"])
 {
-   
+   $sqlSelect = $conn->prepare("SELECT * from Cars
 }
 else
 {
