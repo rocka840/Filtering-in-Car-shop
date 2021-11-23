@@ -6,5 +6,10 @@ function start(){
 }
 
 function filtered(){
+    
+    if($("#ChoiceOfPrice")
+    {
+       } else {}
+    
    $("table").load("carList.php?MaxPrice="+$("#maxPrice").val());
 }
