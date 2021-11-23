@@ -35,11 +35,12 @@ if ($conn->connect_error) {
 
 
 if(isset($_GET["MaxPrice"])){
-    $sqlSelect = $conn->prepare("SELECT * from Cars where CarPrice>?");
+    $sqlSelect = $conn->prepare("SELECT * from Cars where CarPrice<=?");
     $sqlSelect->bind_param("i",$_GET["MaxPrice"]);
 } else if ($_GET["MinPrice"])
 {
-   $sqlSelect = $conn->prepare("SELECT * from Cars
+   $sqlSelect = $conn->prepare("SELECT * from Cars where CarPrice>=?);
+   $sqlSelect->bind_param("i",$_GET["MinPrice"]);
 }
 else
 {
