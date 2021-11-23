@@ -17,7 +17,7 @@
     <select id="ChoiceOfPrice">
         <option value="0">Max</option>
         <option value="1">Min</option>
-    </select><input id="maxPrice">
+    </select><button id="givenPrice"><button>Filter</button>
 
     <button>filter</button>
 
